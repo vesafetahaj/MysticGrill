@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Poppins:wght@200;300;600&display=swap');
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ebebeb;
+    height: 150px;
+  }
+  
+  .NavMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .NavMenu li {
+    font-size: 16px;
+    padding: 30px;
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+  }
+  
+  .NavMenu li a {
+    text-decoration: none;
+    color: #003C3B;
+  }
+  
+  .NavMenu li a:hover {
+    color: #c10000;
+  }
+  
+  .NavMenu li.active a {
+    color: #c10000;
+  }
+  
+  .NavLogo {
+    width: 200px;
+    height: auto;
+  }
+  
