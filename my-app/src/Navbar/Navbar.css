@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #ebebeb;
+    background-color:  #265a5b;
     height: 150px;
   }
   
@@ -26,15 +26,15 @@
   
   .NavMenu li a {
     text-decoration: none;
-    color: #003C3B;
+    color: #7a0000;
   }
   
   .NavMenu li a:hover {
-    color: #c10000;
+    color: #003C3B;
   }
   
   .NavMenu li.active a {
-    color: #c10000;
+    color: #7a0000;
   }
   
   .NavLogo {

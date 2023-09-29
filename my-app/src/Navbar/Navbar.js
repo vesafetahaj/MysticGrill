@@ -11,7 +11,7 @@ function NavBar() {
         <li><Link to="/catering">Catering</Link></li>
         <li className="LogoContainer">
           <img
-            src={`${process.env.PUBLIC_URL}/logo/logo-no-background.png`}
+            src={`${process.env.PUBLIC_URL}/images/download.png`}
             alt="Logo"
             className="NavLogo"
           />

@@ -1,0 +1,49 @@
+.Footer {
+    background-color: #265a5b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .FooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .FooterLogo img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .FooterLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .FooterLinks ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .FooterLinks ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-family: 'Onest', sans-serif;
+  }
+  
+  .FooterLinks ul li a:hover {
+    color: #710000; /* Change color on hover (e.g., to gold/yellow) */
+  }
+  
+  .FooterText {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
