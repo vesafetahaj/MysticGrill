@@ -5,10 +5,7 @@
     background-color: #265a5b;
     height: 350px;
 }
-.imgContainer img{
-    width: 60%;
-    margin-top: -290px;
-}
+
 .desc{
     width: 45%;
     margin: 20px auto;
@@ -80,4 +77,8 @@
     margin-top: 70px;
     margin-bottom: 90px;
   }
-  
+  .flex-container{
+    width: 70%;
+    margin: -290px auto;
+    padding-bottom: 350px;
+  }

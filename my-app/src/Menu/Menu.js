@@ -1,4 +1,6 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Menu.css';
 import Footer from '../Footer/Footer';
 
@@ -13,25 +15,52 @@ function Menu() {
       imageSrc: `${process.env.PUBLIC_URL}/images/dish2.jpg`,
     },
     {
-      name: 'eatball plate garnished with tomatoe sauce',
+      name: 'meatball plate garnished with tomato sauce',
       imageSrc: `${process.env.PUBLIC_URL}/images/dish3.jpg`,
     },
     {
-      name: 'penne pasta cooked with tomatoe sauce',
+      name: 'penne pasta cooked with tomato sauce',
       imageSrc: `${process.env.PUBLIC_URL}/images/dish4.jpg`,
     },
   ];
 
   return (
     <div className="Menu">
-      <div className='MenuNav'></div>
-      <div className='imgContainer'>
-      <img
-        src={`${process.env.PUBLIC_URL}/images/restaurant-interior.jpg`}
-      />
+      <div className='MenuNav'>
+        </div>
+      <div className="flex-container">
+        
+        <Carousel
+          autoPlay
+          infiniteLoop
+          showStatus={false}
+          showThumbs={false}
+          interval={3000} // Set the interval to control slide speed (in milliseconds)
+          transitionTime={500} // Set the transition time for the fade effect (in milliseconds)
+          transitionTimeUnit="ms" // Set the unit for transition time (ms or s)
+        >
+          <div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/restaurant-interior.jpg`}
+              alt="Slider Image 1"
+            />
+          </div>
+          <div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/slider-image2.jpg`}
+              alt="Slider Image 2"
+            />
+          </div>
+          <div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/slider-image3.jpg`}
+              alt="Slider Image 3"
+            />
+          </div>
+        </Carousel>
       </div>
       <section>
-        <div className='desc'>
+      <div className='desc'>
           <p>Our food menus are tailored appropriately to season and availbity. Changing daily, we use the highest quality of produce, cooked with care.
           <br></br><br></br>
           Our wine list has a focus on European producers alongside a smattering from the new world. We work with wine makers who produce high quality wine with minimal intervention - ranging from classics to the unusual.
@@ -57,10 +86,9 @@ function Menu() {
               </div>
             </div>
           ))}
-        </div> 
-      </section> 
+        </div>
+      </section>
     </div>
-    
   );
 }
 
